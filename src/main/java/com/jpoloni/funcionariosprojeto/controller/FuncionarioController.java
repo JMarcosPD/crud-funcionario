@@ -35,6 +35,7 @@ public class FuncionarioController {
         return funcionarioService.criarPessoa(funcionarioModel);
     }
 
+    @PutMapping("/{id}")
     public FuncionarioModel atualizar(@PathVariable Long id, @RequestBody FuncionarioModel funcionarioModel){
         return funcionarioService.atualizar(id, funcionarioModel);
     }
